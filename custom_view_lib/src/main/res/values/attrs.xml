@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--   自定义label标签-->
+        <declare-styleable name="LabelView">
+            <!-- 文本相关 -->
+            <attr name="labelText" format="string" />
+            <attr name="labelTextColor" format="color" />
+            <attr name="labelTextSize" format="dimension" />
+
+            <!-- 图标相关 -->
+            <attr name="labelIconSrc" format="reference" />
+            <attr name="labelIconVisible" format="boolean" />
+            <attr name="labelIconSize" format="dimension" />
+
+            <!-- 背景相关 -->
+            <attr name="labelBackgroundColor" format="color" />
+            <attr name="labelBackgroundStartColor" format="color" />
+            <attr name="labelBackgroundEndColor" format="color" />
+            <attr name="labelCornerRadius" format="dimension" />
+            <attr name="labelBackgroundAlpha" format="integer" />
+
+
+            <!-- 边框相关 -->
+            <attr name="labelBorderColor" format="color" />
+            <attr name="labelBorderWidth" format="dimension" />
+
+            <!-- 透明度 -->
+            <attr name="labelAlpha" format="float" />
+
+            <!-- 内边距 -->
+            <attr name="labelPadding" format="dimension" />
+            <attr name="labelPaddingStart" format="dimension" />
+            <attr name="labelPaddingEnd" format="dimension" />
+            <attr name="labelPaddingTop" format="dimension" />
+            <attr name="labelPaddingBottom" format="dimension" />
+
+            <!--            图标的内边距-->
+            <attr name="labelIconPadding" format="dimension" />
+            <attr name="labelIconPaddingStart" format="dimension" />
+            <attr name="labelIconPaddingEnd" format="dimension" />
+            <attr name="labelIconPaddingTop" format="dimension" />
+            <attr name="labelIconPaddingBottom" format="dimension" />
+
+            <!--            文字外边距-->
+            <attr name="labelTextMargin" format="dimension" />
+            <attr name="labelTextMarginStart" format="dimension" />
+            <attr name="labelTextMarginEnd" format="dimension" />
+            <attr name="labelTextMarginTop" format="dimension" />
+            <attr name="labelTextMarginBottom" format="dimension" />
+
+        </declare-styleable>
+</resources>

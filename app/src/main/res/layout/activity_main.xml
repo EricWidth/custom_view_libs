@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.custom_view_lib.labels.LabelView
+        android:id="@+id/label_view"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:labelText="Good"
+        app:labelIconVisible="false"
+        app:labelCornerRadius="900dp"
+        app:labelTextColor="@color/black"
+        app:labelBorderWidth="1dp"
+        app:labelBorderColor="@color/black"
+        app:labelPaddingStart="12dp"
+        app:labelPaddingEnd="12dp"/>
+
+</LinearLayout>

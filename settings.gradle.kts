@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CustomViews"
 include(":app")
- 
+include(":custom_view_lib")

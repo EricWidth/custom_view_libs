@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.customviews"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.customviews"
@@ -40,7 +40,9 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":custom_view_lib"))
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+    implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
