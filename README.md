@@ -35,7 +35,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.YourName:YourRepo:v1.0.0'
+    	        implementation("com.github.EricWidth:custom_view_libs:release-v1.0.2")
 }
 ```
 
