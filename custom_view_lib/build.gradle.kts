@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.kapt")
     id("maven-publish")
 }
@@ -26,37 +26,43 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "21"
     }
 }
-afterEvaluate {
-    publishing {
-        publications {
-            register<MavenPublication>("release") {
-                groupId = "com.github.EricWidth"
-                artifactId = "custom_view_lib"
-                version = "1.0.0"
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.EricWidth"
+            artifactId = "custom_view_lib"
+            version = "1.0.0"
 
-                afterEvaluate {
-                    from(components["release"])
-                }
+            afterEvaluate {
+                from(components["release"])
+            }
+            pom {
+                name.set("Custom View Library")
+                description.set("A custom view library using Glide and Material Components.")
+                url.set("https://github.com/EricWidth/custom-view-lib")
             }
         }
     }
 }
 
+
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    api(libs.androidx.core.ktx)
+    api(libs.androidx.appcompat)
+    api(libs.material)
+
+    api("com.github.bumptech.glide:glide:4.15.1")
+    kapt("com.github.bumptech.glide:compiler:4.15.1")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.github.bumptech.glide:glide:4.15.1")
-    kapt("com.github.bumptech.glide:glide:4.15.1")
 }
