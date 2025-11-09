@@ -49,4 +49,26 @@
             <attr name="labelTextMarginBottom" format="dimension" />
 
         </declare-styleable>
+
+    <declare-styleable name="GradientBorderLinearLayout">
+        <!-- 边框颜色（单色或渐变） -->
+        <attr name="borderStartColor" format="color" />
+        <attr name="borderEndColor" format="color" />
+
+        <!-- 背景颜色（单色或渐变） -->
+        <attr name="bgStartColor" format="color" />
+        <attr name="bgEndColor" format="color" />
+
+        <!-- 圆角 -->
+        <attr name="cornerRadius" format="dimension" />
+
+        <!-- 边框宽度 -->
+        <attr name="borderWidth" format="dimension" />
+        <attr name="gradientOrientation">
+            <enum name="left_right" value="0" />
+            <enum name="top_bottom" value="1" />
+            <enum name="bl_tr" value="2" />
+            <enum name="tl_br" value="3" />
+        </attr>
+    </declare-styleable>
 </resources>
