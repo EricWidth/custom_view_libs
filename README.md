@@ -151,13 +151,18 @@ labelView.setTextMarginPx(5, 0, 5, 0);
 | `setBorderColor()` | 设置边框颜色 |
 | `setTextMarginPx()` | 设置文字外边距 |
 
+
+# GradientBorderLinearLayout
+## 新增说明
+新增具有变色边框和变色本经的LinearLayout布局
+
 ## 注意事项
 
 **重要：** 在使用时，请参考 `MainActivity` 中的调用方式，否则可能无法正常显示效果。
 
 ## 更新日志
 
-### v1.0.0
+### v1.0.3
 - 初始版本发布
 - 支持基本标签功能
 - 提供丰富的自定义属性
